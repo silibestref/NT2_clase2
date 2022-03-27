@@ -57,7 +57,10 @@ const proceso = {
         while(i < this.reclamos.length){
             if(this.reclamos[i].estadoResolucion){
                 reclamoResuelto = this.retirarReclamoResuelto(i);
+                this.reclamosConcluidos.push(reclamoResuelto[0]);
+                /* Otra alternativa 
                 this.reclamosConcluidos.push(reclamoResuelto.pop());
+                */
             }else{
                 i++;
             }
